@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-4 md:px-6"
+      >
+        <a href="#" class="text-2xl font-bold text-gray-800">FurnitureStore</a>
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-6">
+          <li><a href="#" class="hover:text-gray-500">Home</a></li>
+          <li><a href="#products" class="hover:text-gray-500">Products</a></li>
+          <li><a href="#services" class="hover:text-gray-500">Services</a></li>
+          <li><a href="#reviews" class="hover:text-gray-500">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white">
+        <ul class="space-y-4 py-4 px-4">
+          <li><a href="#" class="block hover:text-gray-500">Home</a></li>
+          <li>
+            <a href="#products" class="block hover:text-gray-500">Products</a>
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-gray-500">Services</a>
+          </li>
+          <li>
+            <a href="#reviews" class="block hover:text-gray-500">Reviews</a>
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-gray-500">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-[90vh]"
+      style="
+        background-image: url('./Assets/Backgroun-image.avif');
+      "
+    >
+      <div
+        class="container mx-auto h-full flex flex-col justify-center items-start text-white px-4 md:px-6"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Modern Furniture for Your Home
+        </h1>
+        <p class="mt-4 text-lg md:text-xl">
+          Discover stylish and affordable pieces to transform your space.
+        </p>
+        <a
+          href="#products"
+          class="mt-6 px-6 py-3 bg-white text-black font-semibold rounded"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product1.jpg"
+              alt="Product 1"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Elegant Sofa</h3>
+            <p class="mt-2 text-gray-600">Comfort meets style.</p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product2.avif"
+              alt="Product 2"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Dining Table</h3>
+            <p class="mt-2 text-gray-600">Perfect for family gatherings.</p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product3.jpg"
+              alt="Product 3"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Office Chair</h3>
+            <p class="mt-2 text-gray-600">Ergonomic and comfortable.</p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product4.jpg"
+              alt="Product 4"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Modern Bed Frame</h3>
+            <p class="mt-2 text-gray-600">
+              Sleep in style with this elegant design.
+            </p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product5.jfif"
+              alt="Product 5"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Wooden Bookshelf</h3>
+            <p class="mt-2 text-gray-600">
+              Perfect for organizing and displaying your collection.
+            </p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img
+              src="./Assets/Product6.webp"
+              alt="Product 6"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-semibold mt-4">Round Dining Table</h3>
+            <p class="mt-2 text-gray-600">
+              Compact and stylish for intimate gatherings.
+            </p>
+            <button class="mt-4 px-6 py-2 bg-black text-white rounded">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <i class="ri-truck-line text-3xl mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">Free Delivery</h3>
+            <p class="mt-2 text-gray-600">
+              Fast and reliable delivery for all orders.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="ri-settings-5-line text-3xl mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">Customization</h3>
+            <p class="mt-2 text-gray-600">
+              Tailor-made furniture to suit your style.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="ri-customer-service-line text-3xl mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">24/7 Support</h3>
+            <p class="mt-2 text-gray-600">We're here to assist you anytime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Customer Reviews</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <p class="text-gray-600">
+              "Fantastic quality and excellent service! My living room looks
+              amazing."
+            </p>
+            <h4 class="mt-4 text-lg font-semibold">- John Doe</h4>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <p class="text-gray-600">
+              "The customization options are great. Highly recommend this
+              store!"
+            </p>
+            <h4 class="mt-4 text-lg font-semibold">- Jane Smith</h4>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <p class="text-gray-600">
+              "Super fast delivery and very professional support team."
+            </p>
+            <h4 class="mt-4 text-lg font-semibold">- Michael Brown</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col sm:flex-row sm:justify-between justify-between items-center">
+          <p>&copy; 2024 FurnitureStore. All rights reserved.</p>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-gray-400">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const toggleButton = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    toggleButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>

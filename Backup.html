@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex flex-wrap justify-between items-center py-4 px-6">
+            <a href="#" class="text-2xl font-bold text-gray-800">FurnitureStore</a>
+            <button class="block md:hidden focus:outline-none" id="menu-toggle">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6" id="menu">
+                <li><a href="#" class="hover:text-gray-500">Home</a></li>
+                <li><a href="#products" class="hover:text-gray-500">Products</a></li>
+                <li><a href="#services" class="hover:text-gray-500">Services</a></li>
+                <li><a href="#reviews" class="hover:text-gray-500">Reviews</a></li>
+                <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bg-cover bg-center h-screen px-6 flex flex-col justify-center text-center md:text-left" style="background-image: url('https://img.freepik.com/premium-photo/room-brown-tan-background_87720-155338.jpg?semt=ais_hybrid');">
+        <h1 class="text-4xl md:text-6xl font-bold">Modern Furniture for Your Home</h1>
+        <p class="mt-4 text-lg md:text-xl">Discover stylish and affordable pieces to transform your space.</p>
+        <a href="#products" class="mt-6 px-6 py-3 bg-white text-black font-semibold rounded">Shop Now</a>
+    </section>
+
+    <section id="products" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://a.1stdibscdn.com/grand-piano-sofa-natural-oak-legs-right-for-sale/1121189/f_153715421562658790578/15371542_master.jpg?width=2400" alt="Product 1" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Elegant Sofa</h3>
+                    <p class="mt-2 text-gray-600">Comfort meets style.</p>
+                    <button class="mt-4 px-6 py-2 bg-black text-white rounded">View Details</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://i5.walmartimages.com/seo/Brooks-Modern-Solid-Wood-Walnut-5-Piece-Dining-Room-Kitchen-Set_c276cc82-e4d5-44a5-9c98-257f68318c59.bc0b6792ae55db49096b9f2fb67c39e3.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Product 2" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Dining Table</h3>
+                    <p class="mt-2 text-gray-600">Perfect for family gatherings.</p>
+                    <button class="mt-4 px-6 py-2 bg-black text-white rounded">View Details</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://www.leyform.com/_white-frame-office-chair/gallery/white-or-grey-office-chair-no-arms-black-nylon-base-sprint-img-01.jpg" alt="Product 3" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Office Chair</h3>
+                    <p class="mt-2 text-gray-600">Ergonomic and comfortable.</p>
+                    <button class="mt-4 px-6 py-2 bg-black text-white rounded">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="ri-truck-line text-3xl mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold">Free Delivery</h3>
+                    <p class="mt-2 text-gray-600">Fast and reliable delivery for all orders.</p>
+                </div>
+                <div class="text-center">
+                    <i class="ri-settings-5-line text-3xl mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold">Customization</h3>
+                    <p class="mt-2 text-gray-600">Tailor-made furniture to suit your style.</p>
+                </div>
+                <div class="text-center">
+                    <i class="ri-customer-service-line text-3xl mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold">24/7 Support</h3>
+                    <p class="mt-2 text-gray-600">We're here to assist you anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Customer Reviews</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <p class="text-gray-600">"Fantastic quality and excellent service! My living room looks amazing."</p>
+                    <h4 class="mt-4 text-lg font-semibold">- John Doe</h4>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <p class="text-gray-600">"The customization options are great. Highly recommend this store!"</p>
+                    <h4 class="mt-4 text-lg font-semibold">- Jane Smith</h4>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <p class="text-gray-600">"Super fast delivery and very professional support team."</p>
+                    <h4 class="mt-4 text-lg font-semibold">- Michael Brown</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+        <p>&copy; 2024 FurnitureStore. All rights reserved.</p>
+        <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-gray-400">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
